@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        var phrase = 'Hello, how are you doing today?';
+        var reverse = [];
+        
+
+        function spinWords(str){
+            
+            
+            str = str.split(" ");
+            for(var i = 0; i < str.length; i++){
+            if(str[i].length > 4){
+                for(var r = str[i].length - 1; r >= 0; r--){
+                reverse.push(str[i][r]);
+                }
+
+            } else {
+                reverse.push(str[i]);
+            }
+             
+            }
+        reverse = reverse.join("");
+        console.log(reverse)
+        }
+
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
