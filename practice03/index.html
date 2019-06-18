@@ -3,26 +3,36 @@
 <head>
     <script>
         var list = ['hello', 34, true, false, 'goodbye', 56, 12, '25', true];
-        var multidimensionalArray = [[],[],[]]
-        function sortArrayByDataType(arr, newArr){
-            debugger;
-            for(var arrIndex = 0; arrIndex < arr.length; arrIndex++){
-                if(arr[arrIndex] === typeof boolean){
-                    newArr.push[0];
-                    return newArr;
-                } else if (arr[arrIndex] === typeof string){
-                    newArr.push[1];
-                    return newArr;
-                } else if (arr[arrIndex] === typeof number){
-                    newArr.push[2];
-                    return newArr;
+        
+        let groupArray = (arr) => {
+            let multi = [];
+            let bool = [];
+            let str = [];
+            let num = [];
+            for(var i = 0; i < arr.length; i++){
+                if(typeof arr[i] === 'string'){
+                    str.push(arr[i]);
+                } else if( typeof arr[i] === 'boolean'){
+                    bool.push(arr[i]);
+                } else {
+                    num.push(arr[i]);
                 }
-                console.log(newArr)
             }
+            multi.push(str, bool, num);
+            return multi;
         }
+        groupArray(list);
     </script>
 </head>
 <body>
-    
+    	-take in a list
+	-create a new empty list, to be returned later
+	-go through inputted list one by one
+	-check using typeof to see what type of value that index holds
+	-create 3 separate arrays for different types.
+		-string, boolean, number
+	-push to specific array
+	-push array to multi array,
+	-return multi array
 </body>
 </html>
