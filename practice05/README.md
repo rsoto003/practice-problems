@@ -4,3 +4,5 @@ Build a function that prints the numbers from 1 to 100. But for multiples of thr
 
 - Write a function that takes no parameters
 - The function should output the numbers 1 through 100, following the rules from above
+
+
